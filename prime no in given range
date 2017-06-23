@@ -1,0 +1,14 @@
+def prime():
+    min = int(input("Enter the min value : "))
+    max = int(input("Enter the max vale : "))
+    for n in range(min+1,max+1):
+        count = 0
+        for i in range(2,n):
+            if((n%i) == 0):
+                count = 1
+                break
+        if(count == 0):
+            print(n)
+
+if __name__ == '__main__':
+     prime()
